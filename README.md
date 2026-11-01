@@ -15,7 +15,7 @@ I built this during my own graduate job search to replace hours of manual search
 | 3. Prepare | For a role the user picks, opens the form in the user's own Chrome, fills standard fields from a profile file, re-checks every field, then stops. | A filled form, ready for review |
 | 4. Track | After the user confirms submission, logs it. | `applied.csv` |
 
-On a typical run, it checks around 50 companies and produces a ranked shortlist plus a log of why every other role was skipped.
+On a typical run it checks around 50 companies and produces a ranked shortlist plus a log of why every other role was skipped.
 
 ---
 
@@ -44,7 +44,7 @@ Each rule came from something that went wrong in testing.
 |---|---|
 | Never click Submit; stop on the final page | Submission is a one-way action. A human should always review first. |
 | Re-check every field after a resume upload | A resume parser auto-filled the GitHub field with a portfolio URL. |
-| Stop if a field changes that the agent didn't change | The user and the agent edited the same form at once, and fields were overwritten. |
+| Stop if a field changes that the agent didn't change | The user and the agent edited the same form at once and fields were overwritten. |
 | Fill fields first, then ask the user to upload files | The browser extension is not allowed to attach local files, so uploads are done by the user. |
 | Never use the automated browser on job boards (SEEK, LinkedIn) | Automated activity on personal job-board accounts risks the account being flagged. |
 | Stop at any CAPTCHA or bot check | Some systems reject automated submissions. The agent should never try to get around them. |
