@@ -79,15 +79,17 @@ Each rule came from something that went wrong in real use.
 1. Install [Node.js](https://nodejs.org) (LTS) and [Claude Code](https://code.claude.com/docs/en/setup).
 2. Install the **Playwright MCP Bridge** extension in Chrome.
 3. In a terminal, in this folder:
+
    ```
    claude mcp add playwright -e PLAYWRIGHT_MCP_EXTENSION_TOKEN=<your-token> -- npx @playwright/mcp@latest --extension
    ```
 4. Copy `task.template.md` to `task.md` and `profile.example.md` to `profile.md`, then fill them in. Add your resume PDF.
 5. Start `claude` and type:
+
    ```
    Read task.md and follow it.
    ```
-6. When a session needs your logged-in tab (for example to fill a form), open the tab in Chrome and connect it through the Playwright extension icon first.
+6. When a session needs your logged-in tab (for example, to fill a form), open the tab in Chrome and connect it through the Playwright extension icon first.
 
 ---
 
